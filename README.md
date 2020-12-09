@@ -1,4 +1,4 @@
-# MinHeap
+# MinHeap ![Language](https://img.shields.io/badge/language-C++11-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)
 A templated implementation of a MinHeap structure built on a dynamic array
 
 This implementation uses 2 templated-types
@@ -6,13 +6,13 @@ This implementation uses 2 templated-types
   - ValType : A type for the actual value of the items
   
 Supported operations
-  - MinHeap::insert to insert a new <key, value> pair in the Heap
-  - MinHeap::getMin to retrieve the minimal value of the Heap
-  - MinHeap::deleteMin to remove the minimal value from the Heap
-  - MinHeap::empty
-  - MinHeap::getSize to retrieve the current number of items in the Heap
-  - MinHeap::getCapacity to retrieve the maximal number of items the Heap can store
-  - MinHeap::clear to remove every item from the Heap.
+  - _MinHeap::insert()_ to insert a new <key, value> pair in the Heap
+  - _MinHeap::getMin()_ to retrieve the minimal value of the Heap
+  - _MinHeap::deleteMin()_ to remove the minimal value from the Heap
+  - _MinHeap::empty_()
+  - _MinHeap::getSize()_ to retrieve the current number of items in the Heap
+  - _MinHeap::getCapacity()_ to retrieve the maximal number of items the Heap can store
+  - _MinHeap::clear()_ to remove every item from the Heap.
 
 NB : The root of the heap is the element of the dynamic array at index 1 (not 0)
 It allows for faster computations of fathers/sons nodes using bitwise arithmetic.
